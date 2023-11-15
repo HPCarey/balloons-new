@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    color: #555;
+}
+
+h1 {
+    font-size:2em;
+    color: #609;
+    font-weight: 400;
+}
+
+h2, h3, h4 { color: 
+    #99007f;
+    }
+
+h2 {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+
+em {
+    color: #99007f;
+    font-weight: bold;
+}
+
+strong {
+    color: #609;
+    font-weight: bold;
+}
+
+ul {
+list-style-type: square;
+}
