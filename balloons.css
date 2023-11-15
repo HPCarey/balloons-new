@@ -4,14 +4,17 @@ body {
 }
 
 h1 {
-    font-size:2em;
+    font-size: 2em;
     color: #609;
     font-weight: 400;
 }
 
-h2, h3, h4 { color: 
-    #99007f;
-    }
+h2,
+h3,
+h4 {
+    color:
+        #99007f;
+}
 
 h2 {
     font-style: italic;
@@ -30,5 +33,17 @@ strong {
 }
 
 ul {
-list-style-type: square;
+    list-style-type: square;
+}
+
+a:link {
+    color: #660099;
+}
+
+a:visited {
+    color: #876399;
+}
+
+a:hover {
+    color: #339900;
 }
