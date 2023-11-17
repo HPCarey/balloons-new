@@ -4,61 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="balloons.css">
+    <link rel="stylesheet" type="text/css" href="assets/balloons.css">
     <title>Balloons Ltd.</title>
 </head>
-    <h1>Balloons Ltd.</h1>
-    <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about-us.html">About us</a></li>
-        <li><a href="contact-us.html">Contact us</a></li>
-        </ul>
+<h1>Balloons Ltd.</h1>
+<ul class="navigation">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about-us.html">About us</a></li>
+    <li><a href="contact-us.html">Contact us</a></li>
+</ul>
 
-    <h2>Services</h2>
+<h2>Services</h2>
 
-    <p class="introduction">We provide a wide range of services including balloon manufacturing, repair, restoration and customisation.
-        Whatever your balloon needs are, our team of expert engineers are on here to help.</p>
-    <p>
+<p class="introduction">We provide a wide range of services including balloon manufacturing, repair, restoration and
+    customisation.
+    Whatever your balloon needs are, our team of expert engineers are on here to help.</p>
+<p>
 
-    </p>
-    <h3>Manufacturing</h3>
+</p>
+<h3>Transitions</h3>
+<main>
+    <section class="transition-links">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition">I am a link made with HTML and CSS!</a>
+    </section>
 
-    <p>Our manufacturing division is staffed by a team of certified balloon engineers with combined balloon experience
-        of more than 50 years.</p>
+    <section class="jsTransition-classes">
+        <p>
+            <button class="trigger">Click this button - it's an event!</button>
+        </p>
+        <div class="target">
+            I am the target element! <br>I change after you click a button (event), made with JavaScript
+        </div>
+    </section>
+    <section class="jsTransition-classes">
+        <p>
+            <button class="newtrigger">Click this button - it's an event!</button>
+        </p>
+        <div class="newtarget">
+            I am the target element! <br>I change after you click a button (event), made with JavaScript
+        </div>
+    </section>
 
-    <p>We make all kinds of balloons, including: </p>
-    <ul>
-        <li>Party balloons</li>
-        <li>Helium-filled balloons</li>
-        <li>Hot-air balloons</li>
-    </ul>
-    <h3>Repair</h3>
+</main>
 
-    <p>We repair all forms of balloon damage including holes, tears and lack of air. So don't throw out that old
-        balloon, bring it to us and let it live to see another day!</p>
+<script>
+    /*JavaScript*/
+    const trigger = document.querySelector('.trigger');
+    const target = document.querySelector('.target');
+    const newtrigger = document.querySelector('.newtrigger');
+    const newtarget = document.querySelector('.newtarget');
 
-    <h3>Restoration</h3>
 
-    <p>Do you have a balloon that has seen better days? Using state of the art balloon technology, we can restore your
-        once-loved balloon to all it's former glory.</p>
+    trigger.addEventListener('click', changeTarget);
+    newtrigger.addEventListener('click', changeNewTarget);
 
-    <h3>Customisation</h3>
+    function changeTarget() {
+        target.classList.toggle('active-target');
+    }
 
-    <p>Want to stand out from the crowd? Provide us with a design and we will apply it to whatever type of balloon you
-        are purchasing.</p>
+    function changeNewTarget() {
+        newtarget.classList.toggle('active-newtarget');
+    }
+</script>
 
-    <p>If you are not the creative type, our team of designers can create a unique design for you that reflects your
-        personality.</p>
 
-    <p>How the customisation process works: </p>
-    <ol>
-        <li>You choose or create a design</li>
-        <li>You choose the balloon(s) you want</li>
-        <li>We make the balloons for you</li>
-    </ol>
-
-    <p><strong><a href="contact-us.html">Get in touch with our sales team</a> </strong>for more details</p>
+<p><strong><a href="contact-us.html">Get in touch with our sales team</a> </strong>for more details</p>
 
 </body>
 
