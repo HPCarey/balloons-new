@@ -89,6 +89,17 @@ a:hover {
 .navigation a:hover {
     background-color: #c4e8b1;
 }
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form {
+        width: 30em;
+}
+    
 .transition-links,          /*for CSS*/
 .jsTransition-classes {     /*for JS*/
     border: 1px solid #ccc;
