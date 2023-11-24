@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Balloons.Ltd</h1>
+    <h1>Ball.Ltd</h1>
     <ul class="navigation">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -18,11 +18,51 @@
 
     </ul>
     <h2>About Us</h2>
-    <p class="introduction">We provide a wide range of services including balloon manufacturing, repair, restoration and
+    <p class="balloons-intro">We provide a wide range of services including balloon manufacturing, repair, restoration and
         customisation.
         Whatever your balloon needs are, our team of expert engineers are on here to help.</p>
-    <p>
+    <p class="balloons-canvas">
+        <canvas id="balloonCanvas"></canvas>
 
+        <script>
+            // Get the canvas element and its context
+            var canvas = document.getElementById("balloonCanvas");
+            var ctx = canvas.getContext("2d");
+    
+            // Function to draw a colored balloon
+            function drawBalloon(x, y, radius, color) {
+                // Balloon body
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, 3 * Math.PI);
+                ctx.fillStyle = color;
+                ctx.fill();
+                ctx.stroke();
+    
+                // Balloon string
+                ctx.beginPath();
+                ctx.moveTo(x, y + radius);
+                ctx.lineTo(x, y + radius + 60); // Make the string longer
+                ctx.strokeStyle = "#000";
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            }
+    
+            // Draw balloons as a bunch, taking up the entire canvas
+            var balloonRadius = 25;
+    
+            // Calculate the positions based on fixed canvas size
+            var bunchX = canvas.width / 2;
+            var bunchY = canvas.height / 2;
+    
+            // Draw the first three balloons
+            drawBalloon(bunchX - balloonRadius, bunchY, balloonRadius, "red");
+            drawBalloon(bunchX, bunchY, balloonRadius, "blue");
+            drawBalloon(bunchX + balloonRadius, bunchY, balloonRadius, "green");
+    
+            // Draw the purple and yellow balloons side by side in front
+            drawBalloon(bunchX - 2 * balloonRadius, bunchY + balloonRadius, balloonRadius, "orange");
+            drawBalloon(bunchX + 2 * balloonRadius, bunchY + balloonRadius, balloonRadius, "purple");
+        </script>
     </p>
     <h3>Manufacturing</h3>
 

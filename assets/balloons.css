@@ -90,6 +90,19 @@ a:hover {
     background-color: #c4e8b1;
 }
 
+.balloons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add margin to separate the balloons from other elements */
+}
+
+#balloonCanvas {
+    display: block;
+    border: 1px solid #000;
+    width: 300px; /* Set a fixed size for the canvas */
+    height: 200px; /* Set a fixed size for the canvas */
+}
+
 label, input, textarea {
     display: block;
     width: 100%;
